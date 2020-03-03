@@ -106,21 +106,28 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-top: 14px;
+    padding-top: 16px;
+    padding-bottom: 25px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .wrapper_rating__group {
+  .wrapper .rating-star--active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    background: url(./../images/star-active.svg);
+    width: 13px;
+    height: 13px;
+    background-size: contain;
     margin: 0; }
+  .wrapper .rating-star {
+    background: url(../images/star.svg);
+    width: 13px;
+    height: 13px; }
   .wrapper__rating__views {
     font-size: 11px;
     line-height: 14px;
     margin-left: 18px; }
-  .wrapper__cost {
-    margin-top: 22px; }
   .wrapper__cost__num {
     font-weight: bold;
     line-height: 19px;
