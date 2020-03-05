@@ -98,7 +98,7 @@ body {
     .card-wrapper .card__img:hover {
       -webkit-transform: scale(1.08);
               transform: scale(1.08);
-      border: 2px solid #e9e6e6;
+      border: 2px solid #f3efef;
       border-radius: 5px; }
   .card-wrapper__discription {
     font-weight: 500;
