@@ -86,24 +86,20 @@ body {
   padding: 30px 15px 10px;
   border: 1px solid #f3f3f3;
   border-radius: 5px; }
-  .card-wrapper .img-wrapper {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    text-align: center; }
-    .card-wrapper .img-wrapper__img {
-      width: 150px;
-      height: 134px;
-      padding: 5px;
-      border: 2px solid transparent;
-      -webkit-transition: border 1s, -webkit-transform 1s;
-      transition: border 1s, -webkit-transform 1s;
-      transition: transform 1s, border 1s;
-      transition: transform 1s, border 1s, -webkit-transform 1s; }
-      .card-wrapper .img-wrapper__img:hover {
-        -webkit-transform: scale(1.08);
-                transform: scale(1.08);
-        border: 2px solid #e9e6e6;
-        border-radius: 5px; }
+  .card-wrapper .card__img {
+    width: 150px;
+    height: 134px;
+    padding: 5px;
+    border: 2px solid transparent;
+    -webkit-transition: border 1s, -webkit-transform 1s;
+    transition: border 1s, -webkit-transform 1s;
+    transition: transform 1s, border 1s;
+    transition: transform 1s, border 1s, -webkit-transform 1s; }
+    .card-wrapper .card__img:hover {
+      -webkit-transform: scale(1.08);
+              transform: scale(1.08);
+      border: 2px solid #e9e6e6;
+      border-radius: 5px; }
   .card-wrapper__discription {
     font-weight: 500;
     font-size: 12px;
@@ -132,17 +128,17 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .card-wrapper .rating__star--active {
+    .card-wrapper .rating__star {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      background: url(./../images/star-active.svg);
+      background: url(./../images/star.svg);
       width: 13px;
       height: 13px;
       background-size: contain;
       margin: 0; }
-    .card-wrapper .rating__star {
-      background: url(../images/star.svg);
+    .card-wrapper .rating__star--active {
+      background: url(../images/star-active.svg);
       width: 13px;
       height: 13px; }
     .card-wrapper .rating__views {
