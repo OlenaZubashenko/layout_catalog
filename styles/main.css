@@ -20,6 +20,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .nav .nav__logo {
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s; }
+    .nav .nav__logo:hover {
+      cursor: pointer;
+      -webkit-transform: scale(1.03);
+              transform: scale(1.03); }
   .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -34,7 +43,9 @@ body {
     margin-right: 20px;
     line-height: 60px;
     font-size: 12px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    -webkit-transition: color 1s;
+    transition: color 1s; }
     .nav__link:hover {
       color: #00acdc; }
   .nav .is-active {
@@ -80,8 +91,19 @@ body {
             box-sizing: border-box;
     text-align: center; }
     .card-wrapper .img-wrapper__img {
-      width: 160px;
-      height: 134px; }
+      width: 150px;
+      height: 134px;
+      padding: 5px;
+      border: 2px solid transparent;
+      -webkit-transition: border 1s, -webkit-transform 1s;
+      transition: border 1s, -webkit-transform 1s;
+      transition: transform 1s, border 1s;
+      transition: transform 1s, border 1s, -webkit-transform 1s; }
+      .card-wrapper .img-wrapper__img:hover {
+        -webkit-transform: scale(1.08);
+                transform: scale(1.08);
+        border: 2px solid #e9e6e6;
+        border-radius: 5px; }
   .card-wrapper__discription {
     font-weight: 500;
     font-size: 12px;
@@ -89,7 +111,12 @@ body {
     color: black;
     padding-bottom: 5px;
     padding-top: 41px;
-    margin: 0; }
+    margin: 0;
+    -webkit-transition: font-weight 0.5s;
+    transition: font-weight 0.5s; }
+    .card-wrapper__discription:hover {
+      cursor: pointer;
+      font-weight: 600; }
   .card-wrapper__code {
     font-size: 11px;
     line-height: 13px; }
@@ -142,7 +169,10 @@ body {
     border-radius: 5px;
     background-color: #00acdc;
     text-align: center;
-    margin-top: 20px; }
+    margin-top: 20px;
+    border: 1px solid #fff;
+    -webkit-transition: background-color 1s, border 1s;
+    transition: background-color 1s, border 1s; }
     .card-wrapper .btn-buy:hover {
       background-color: white;
       border: 1px solid #00acdc; }
@@ -154,7 +184,9 @@ body {
       text-align: center;
       text-transform: uppercase;
       color: #fff;
-      text-decoration: none; }
+      text-decoration: none;
+      -webkit-transition: color 1s;
+      transition: color 1s; }
       .card-wrapper .btn-buy__link:hover {
         color: #00acdc; }
 
