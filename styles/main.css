@@ -6,8 +6,7 @@ body {
 .header {
   background: #fff;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  margin-bottom: 25px; }
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); }
 
 .nav {
   display: -webkit-box;
@@ -73,20 +72,28 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 25px auto; }
+
+.content-wrapper {
+  padding: 10px 15px; }
 
 .card-wrapper {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 200px;
-  height: 405px;
   background-color: #fff;
   margin: 25px;
-  padding: 30px 15px 10px;
   border: 1px solid #f3f3f3;
   border-radius: 5px; }
   .card-wrapper .card__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 15px auto;
     width: 150px;
     height: 134px;
     padding: 5px;
@@ -96,9 +103,9 @@ body {
     transition: transform 1s, border 1s;
     transition: transform 1s, border 1s, -webkit-transform 1s; }
     .card-wrapper .card__img:hover {
-      -webkit-transform: scale(1.08);
-              transform: scale(1.08);
-      border: 2px solid #f3efef;
+      -webkit-transform: scale(1.23);
+              transform: scale(1.23);
+      border: 2px solid #f8f5f5;
       border-radius: 5px; }
   .card-wrapper__discription {
     font-weight: 500;
@@ -106,7 +113,6 @@ body {
     line-height: 15px;
     color: black;
     padding-bottom: 5px;
-    padding-top: 41px;
     margin: 0;
     -webkit-transition: font-weight 0.5s;
     transition: font-weight 0.5s; }
