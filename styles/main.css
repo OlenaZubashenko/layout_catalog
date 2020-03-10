@@ -78,7 +78,6 @@ body {
   padding: 10px 15px; }
 
 .card-wrapper {
-  display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 200px;
@@ -107,7 +106,7 @@ body {
               transform: scale(1.23);
       border: 2px solid #f8f5f5;
       border-radius: 5px; }
-  .card-wrapper__discription {
+  .card-wrapper__description {
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
@@ -116,7 +115,7 @@ body {
     margin: 0;
     -webkit-transition: font-weight 0.5s;
     transition: font-weight 0.5s; }
-    .card-wrapper__discription:hover {
+    .card-wrapper__description:hover {
       cursor: pointer;
       font-weight: 600; }
   .card-wrapper__code {
