@@ -54,7 +54,7 @@ body {
     .nav .is-active::after {
       content: "";
       position: absolute;
-      width: 37px;
+      width: 100%;
       height: 4px;
       background-color: #00acdc;
       bottom: 0;
